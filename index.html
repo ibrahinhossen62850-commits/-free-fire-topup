@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>FREE FIRE CARDING TOP UP</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand-mark">FF</div>
+  <div><h1>FREE FIRE <span>CARDING TOP UP</span></h1><p>Fast • Simple • UID Top-up</p></div>
+  <button class="admin-link" id="openAdmin">Admin</button>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">DIAMOND TOP-UP</p>
+    <h2>Top up your game.<br><span>Keep it simple.</span></h2>
+    <p>সঠিক Player UID দিন, প্যাকেজ বেছে নিন এবং পেমেন্টের তথ্য জমা দিন।</p>
+  </section>
+  <section class="panel">
+    <h3>১. Diamond Package</h3>
+    <div id="packages" class="packages"></div>
+  </section>
+  <section class="panel">
+    <h3>২. Order Details</h3>
+    <form id="orderForm">
+      <label>Player UID<input id="uid" inputmode="numeric" required placeholder="আপনার Free Fire UID"></label>
+      <label>WhatsApp Number<input id="whatsapp" inputmode="tel" required placeholder="01XXXXXXXXX"></label>
+      <label>Payment Method<select id="paymentMethod"><option value="bKash">bKash</option></select></label>
+      <div class="paybox"><span>Send Money to</span><strong id="payNumber">01991545695</strong><button type="button" id="copyNumber">Copy number</button><small>পেমেন্ট করার আগে নম্বরটি যাচাই করুন।</small></div>
+      <label>bKash Transaction ID<input id="trx" required placeholder="Transaction ID"></label>
+      <label>পেমেন্টের পরিমাণ (৳)<input id="amount" type="number" min="1" required placeholder="যত টাকা পাঠিয়েছেন"></label>
+      <button class="primary" type="submit">Submit Order</button>
+      <p class="muted">অর্ডার ম্যানুয়ালি যাচাই করা হবে। Gmail/পাসওয়ার্ড/ব্যাকআপ কোড কখনো দেবেন না।</p>
+    </form>
+  </section>
+  <section class="panel">
+    <h3>অর্ডার জমা দেওয়ার পর</h3>
+    <p>এই ডেমোতে অর্ডার শুধু এই ব্রাউজারেই সংরক্ষিত হয়; আসল অনলাইন অর্ডার ব্যবস্থার জন্য সার্ভার ও ডেটাবেস সংযোগ প্রয়োজন।</p>
+  </section>
+</main>
+<footer>© <span id="year"></span> FREE FIRE CARDING TOP UP · Unofficial fan service; not affiliated with Garena.</footer>
+
+<div class="modal hidden" id="adminModal">
+ <div class="modal-card">
+  <button class="close" id="closeAdmin">✕</button>
+  <h2>Admin Settings (Demo)</h2>
+  <p class="muted">এটি কেবল লোকাল ডেমো—পাসওয়ার্ড-সুরক্ষিত সার্ভার অ্যাডমিন প্যানেল নয়।</p>
+  <form id="settingsForm">
+   <label>Admin email<input id="adminEmail" type="email" value="ibrahinhossen62850@gmail.com"></label>
+   <label>bKash number<input id="adminPay" value="01991545695"></label>
+   <label>Diamond package names & prices (এক লাইনে একটি: নাম|দাম)<textarea id="adminPackages" rows="5">100 Diamonds|0
+310 Diamonds|0
+520 Diamonds|0
+1060 Diamonds|0</textarea></label>
+   <button class="primary" type="submit">Save demo settings</button>
+  </form>
+  <h3>Demo orders on this device</h3><div id="ordersList" class="orders"></div>
+  <button id="clearOrders" class="secondary">Clear demo orders</button>
+ </div>
+</div>
+<div class="toast hidden" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

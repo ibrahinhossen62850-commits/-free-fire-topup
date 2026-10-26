@@ -1,0 +1,10 @@
+{
+  "name": "Free Fire Carding Top Up",
+  "short_name": "FF Top Up",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#101827",
+  "description": "Free Fire UID top-up order demo",
+  "icons": []
+}
